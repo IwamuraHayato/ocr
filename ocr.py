@@ -3,6 +3,7 @@ from PIL import Image
 import pyocr
 import platform
 
+
 if platform.system() == "Windows":
     pyocr.tesseract.TESSERACT_CMD = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 else:
