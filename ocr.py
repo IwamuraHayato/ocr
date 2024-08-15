@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 import pyocr
 import platform
-import pytesseract
 
 if platform.system() == "Windows":
     pyocr.tesseract.TESSERACT_CMD = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
