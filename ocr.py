@@ -22,8 +22,8 @@ if(file_upload !=None):
     st.image(file_upload)# 画像分析する画像を表示
 
     #OCRエンジンを取得
-    engines = pyocr.get_available_tools()
-    engine = engines[0]
+    engines = pyocr.get_available_tools() # pyocrが認識できるOCR外部ツールを検知
+    engine = engines[0] # ツールを複数選択して、エラーにならないように１つだけ選択
     
     txt = engine.image_to_string(Image.open("moji.png"), lang="jpn")
     st.write(txt) # 分析結果を表示
