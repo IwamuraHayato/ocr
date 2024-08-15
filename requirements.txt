@@ -100,3 +100,4 @@ xyzservices==2024.6.0
 yarl==1.9.4
 pyocr
 pillow 
+asari
